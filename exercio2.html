@@ -16,14 +16,37 @@
 
     
 
+    // captura de dados
     var nome = prompt("Qual é o seu nome?");
-    document.write("Olá, " + nome);
-    var gramasDoUsuario = prompt("Olá, qual a quantidade que comeu de proteína hoje?");
-    document.write(nome + "Junior, " + "120g de Proteína" + "<br>");
+    var proteinaDoUsuario = prompt("Olá, qual a quantidade que comeu de proteína hoje?");
     var carboidratoDoUsuario = prompt("A quantidade de carboidrato?");
-    document.write("150g de Carboidrato" + "<br>");
     var gorduraDoUsuario = prompt("E a quantidade de gordura?");
-    document.write("50g de Gordura" + "<br>");
+
+    // Processamento de dados 
+    var proteinaCalorias = proteinaDoUsuario * 4;
+    var carboidratoCalorias = carboidratoDoUsuario * 4;
+    var gorduraCalorias = gorduraDoUsuario * 9; 
+    var totalDeCalorias = proteinaCalorias + carboidratoCalorias + gorduraCalorias;
+
+    
+    // impressao de dados 
+    document.write("Resumo Calórico de " + nome + "<br>");
+    document.write("Proteina: " + proteinaDoUsuario + "g = " + proteinaCalorias + " cal <br>");
+    document.write("Carboidrato: " + carboidratoDoUsuario + "g = " + carboidratoCalorias + " cal <br>");
+    document.write("Gordura: " + gorduraDoUsuario + "g = " + gorduraCalorias + " cal <br>");
+    document.write("Total de Calorias: " + totalDeCalorias + " calorias <br>");
+
+
+
+
+   
+     
+
+
+
+
+
+   
 
     
 
