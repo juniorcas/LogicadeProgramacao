@@ -1,0 +1,52 @@
+<script>
+    //Índice de Massa Corporal, o IMC, é um indicador do grau deobesidade de uma pessoa. Pode ser uma primeira forma de ter umsinal de que alguém está muito gordo ou muito magro. A fórmulado IMC é simples: peso dividido pelo quadrado da altura.
+
+    function mostra(frase) {
+        document.write(frase + "<br>");
+    }
+
+    var peso = 75; 
+    var altura = 1.72;
+    var imc = peso / (altura * altura);
+    mostra("meu IMC é: " + Math.round(imc));
+
+    mostra("IMC do meu primo");
+    var pesoDoPrimo = 83;
+    var alturaDoPrimo = 1.76;
+    var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo);
+    mostra("o IMC do meu primo é:  " + Math.round(imcDoPrimo));
+
+    function calculaIMC(altura, peso) {
+        var imc = peso / (altura * altura);
+        return imc; 
+    }
+
+    var pesoDoPrimo = 83;
+    var alturaDoPrimo = 1.76;
+    var imcDoPrimo = calculaIMC(alturaDoPrimo, pesoDoPrimo);
+    mostra("O imc do meu primo é " + Math.round(imcDoPrimo));
+    mostra("Ele ainda está " + Math.round(imcDoPrimo - 18.5)
+            + " pontos acima do limite da magreza.");
+
+    function calcularIMC(altura, peso) {
+        var imc = peso / (altura * altur);
+        return imc;
+    }
+
+    var peso = 75;
+    var altura = 1.72;
+    var imc = Math.round(calculaIMC(altura, peso));
+
+    mostra("Meu imc é " + Math.round(imc));
+    mostra("Ainda estou " + Math.round(imc - 18.5)
+            + "pontos acima do limite da magreza.");
+
+    
+    mostra("Meu imc é " + Math.round(imc));
+
+    var alturaDoUsuario = prompt("Bom Dia! Qual é a sua altura?");
+    var pesoDoUsuario = prompt("E o seu peso");
+    var imcDoUsuario = calculaIMC(alturaDoUsuario, pesoDoUsuario);
+    mostra("O seu imc é " + imcDoUsuario);
+    
+</script>
