@@ -1,0 +1,53 @@
+<script>// V01. Uma professora trabalha no modelo taxa/hora. Sabendo que a taxa da
+        //professora é de R$ 45,00 por hora e que esse mês ela trabalhou 120 horas,
+        //crie um programa que imprima:
+
+        //Taxa/hora: R$ `taxa`
+        //Horas trabalhadas do Mês: `horasTrabalhadas` horas
+        //Total do Mês: R$ `total`
+
+        var taxa = 45;
+        var hora = 120;
+        var valorHorasTrabalhada = taxa * hora; 
+        document.write("Taxa/Hora é: R$ " + taxa +"<br>");
+        document.write("Horas trabalhada no mês é: " + hora +"<br>");
+        document.write("Total do Mês é: R$ " + valorHorasTrabalhada + "<br>");
+        document.write("-----<br>");
+
+
+        //V02. Um carrinho de compras tem o valor total de R$ 450,23. A loja oferece
+        //um desconto de 15%. Crie um programa que imprima:
+
+        //Total das Compras: R$ X
+        //Aplicando desconto de Y%
+        //Valor a pagar: R$ Z
+
+        var total = 450.23;
+        var desconto = 0.15;
+        var valorDoDesconto = total * desconto;
+        var valorDaCompra = total - valorDoDesconto; 
+        document.write("Total da compra: R$ " + total + "<br>");
+        document.write("Desconto da compra: " + (desconto * 100) + "%" + "<br>");
+        document.write("Valor a pagar: R$ " + valorDaCompra.toFixed(2) + "<br>");
+        document.write("-----<br>");
+
+        // V03. Você tem um saldo de uma aplicação de R$ 13.000,00 que rendeu 7%.
+        // Crie um programa que imprima:
+
+        // Resumo de Aplicações
+        // Saldo anterior: X
+        // Rendimento do mês: Y%
+        // Novo saldo: Z
+
+        var saldo = 13000;
+        var rendimento = 0.07;
+        var valorRendimento = saldo * rendimento; 
+        var novoSaldo = saldo + valorRendimento; 
+        document.write("Resumo de Aplicacões:  <br>");
+        document.write("Saldo Anterior: " + saldo + "<br>");
+        document.write("Rendimento do Mês: " + Math.round(rendimento * 100) + "%" + "<br>");
+        document.write("Novo Saldo: " + novoSaldo + "<br>");
+        
+
+</script>
+
