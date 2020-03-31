@@ -3,7 +3,7 @@
 <script>
 
     function pulaLinha() {
-        document.write("<hr>");
+        document.write("<br>");
     }
       var ano = 2012; 
     document.write("Eu nasci em : " + (ano - 25));
@@ -12,4 +12,15 @@
     pulaLinha();
     document.write("Paulo nasceu em : " + (ano - 32));
     pulaLinha();
+
+    function mostra(frase) {
+      document.write( frase + "<br>");
+    }
+
+    mostra("Usando funcões para melhorar o código");
+
+    function mostra(frase) {
+      document.write(frase);
+      pulaLinha();
+    }
 </script>
