@@ -1,0 +1,33 @@
+<script>
+    function mostra(frase) {
+        document.write(frase + "<br>");
+    }
+
+    var imc = peso / (altura * altura);
+    var peso = 75;
+    var altura = 1.72;
+    var imc = peso / (altura * altura);
+    mostra("meu IMC é: " + Math.round(imc));
+
+    var pesoDoPrimo = 83;
+    var alturaDoPrimo = 1.76;
+    var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo);
+    mostra("o IMC de meu primo é: " + imcDoPrimo.toFixed(2) + "<br>");
+
+    function calculaIMC(altura, peso) {
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var pesoDoPrimo = 83;
+    var alturaDoPrimo = 1.76;
+    var imcDoPrimo = calculaIMC(alturaDoPrimo, pesoDoPrimo);
+    mostra("O imc do meu primo é " + imcDoPrimo.toFixed(2));
+    mostra("Ele ainda está " + (imcDoPrimo.toFixed(2) - 18.5)
+            + " pontos acima do limite da magreza." + "<br>");
+
+    
+
+
+    
+</script>
