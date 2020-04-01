@@ -1,0 +1,23 @@
+<script>
+    // C06. Ao ir em um restaurante, é comum que lhe cobrem 10%. Pergunte ao usuário qual foi o valor
+    //da conta e imprima:
+    //Conta a Pagar: R$ X
+    //Valor dos 10%: R$ Y
+    //Total da Conta: R$ Z
+
+    // Captura de dados
+    var valor = Number(prompt("Qual o valor da conta?"));
+    var percentual = 0.10;
+
+    //Processamento de dados
+    
+    var valorPercentual = valor * percentual;
+    var totalDaConta = valor + valorPercentual;
+    
+
+    // Impressao de dados
+    document.write("Conta a Pagar: R$ "+ valor + "<br>");
+    document.write("Valor dos 10%: R$ " + valorPercentual + "<br>"); 
+    document.write("Total da Conta: R$ " + totalDaConta + "<br>");
+
+</script>
