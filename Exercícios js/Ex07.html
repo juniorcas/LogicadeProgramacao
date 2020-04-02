@@ -9,5 +9,25 @@
     function horasEmMinutos(horas, minutos) {
         var calcular = horas / (minutos * minutos);
         
-    } 
+        // Captura de dados
+    var horasProgramacao = Number(prompt("Quantas horas você estou programacão?"));
+    var horasMarketing = Number(prompt("Qauntas horas você estudou marketing?"));
+    
+    // Processamento de dados
+    var minutosDeProgramacao = 60 * horasProgramacao;
+    var minutosDeMarketing = 60 * horasMarketing; 
+    var totalDeEstudos = minutosDeProgramacao + minutosDeMarketing;
+
+
+    // Impressao de dados
+    document.write("Sabia que você estudou " + minutosDeProgramacao + " minutos de programacão?" + "<br>");
+    document.write("Sabia que você estudou " + minutosDeMarketing + " minutos de marketing?" + "<br>");
+    document.write("E no total você estudou " + totalDeEstudos + " minutos!");
+
+
+    //function calculaIMC(altura, peso) {
+    //var imc = peso / (altura * altura);
+    //return imc;
+    }
+    
 </script>

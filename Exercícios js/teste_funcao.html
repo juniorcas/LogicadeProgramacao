@@ -1,0 +1,62 @@
+<script>
+    function print(texto) {
+        document.write(texto + "<hr>");
+    }
+
+    function imc(peso, altura) {
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    function conversao(horas) {
+        var conversao = horas * 60;
+        return conversao; 
+    }
+
+    //document.write("Bom dia!" + "<br>");
+    //document.write("Boa tarde!" + "<br>");
+    //document.write("Boa noite!" + "<br>");
+
+    print("Junior");
+    print("Bom dia!");
+    print("Boa tarde!");
+    print("Boa noite!");
+
+    var pesoJunior = 75;
+    var alturaJunior = 1.73;
+    var pesoAna = 58;
+    var alturaAna = 1.62;
+    var pesoJose = 88;
+    var alturaJose = 1.70;
+    var pesoCarla = 62;
+    var alturaCarla = 1.68;
+    var pesoTiago = 90;
+    var alturaTiago = 1.75;
+
+    var imcJunior = imc(pesoJunior, alturaJunior);
+    var imcAna = imc(pesoAna, alturaAna);
+    var imcJose = imc(pesoJose, alturaJose);
+    var imcCarla = imc(pesoCarla, alturaCarla);
+    var imcTiago = imc(pesoTiago, alturaTiago);
+
+    print("O imc do Junior é: " + imcJunior);
+    print("O imc da Ana é: " + imcAna);
+    print("O imc do Jose é: " + imcJose);
+    print("O imc da Carla é: " + imcCarla);
+    print("O imc do Tiago é: " + imcTiago); 
+
+    var horasDeGeografia = 3;
+    var horasDeHistoria = 5;
+    var horasDeMatematica = 9;
+    var horasDePortugues = 11;
+
+    var minutosDeGeografia = conversao(horasDeGeografia);
+    var minutosDeHistoria = conversao(horasDeHistoria);
+    var minutosDeMatematica = conversao(horasDeMatematica);
+    var minutosDePortugues = conversao(horasDePortugues); 
+
+    print("Parabéns você estudou " + minutosDeGeografia + " minutos de Georafia");
+    print("Parabéns você estudou " + minutosDeHistoria + " minutos de Historia");
+    print("Parabéns você estudou " + minutosDeMatematica + " minutos de Matematica");
+    print("Parabéns você estudou " + minutosDePortugues + " minutos de Portugues");
+</script>
