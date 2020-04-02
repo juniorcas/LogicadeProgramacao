@@ -1,0 +1,22 @@
+<script>
+    function print(texto) {
+            document.write(texto + "<br>"); 
+        }
+
+    function vitoria(pontos) {
+        var vitoria = pontos * 3;
+    }
+
+    var vitorias = parseInt(prompt("Quantos jogos o CDC FC venceu?"));
+    var empates = parseInt(prompt("Quantos jogos o CDC FC empatou?"));
+    var pontos = (vitorias * 3) + empates;
+
+    print("Nosso time tem " + pontos + " pontos!");
+
+    var vitorias = 3;
+    var empates = parseInt("1"); // já converte string para int
+    var pontos = vitorias * 3 + empates;
+
+    
+    
+</script>
