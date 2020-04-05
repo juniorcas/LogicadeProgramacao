@@ -21,24 +21,32 @@
 
         // obtem o modelo do carro 
         var modelo = dadosDeCadastro.get("modelo");
+       
+
+        // obtem o ano do carro
+        var ano = dadosDeCadastro.get("ano");
         if (!modelo || !ano) {
             alert("Por favor, preencha o modelo e o ano do carro!");
             return false;
         }
-        
-        // obtem o ano do carro
-        var ano = dadosDeCadastro.get("ano");
+
+        // converter o ano para número
+        ano = Number(ano)
+
+        // verificar se o usuario entrou um numero inválido 
+        if (isNaN(ano)) {
+            alert("Número do ano do carro está inválido");
+            return false;
+        } else if (ano < 1886) { // verificar se o ano do carro é real
+            alert("Não há registros de carros antes de 1886, criado por Karl Benz!");
+            return false;
+        }
         
 
         // prepara mensagem de sucesso
         var mensagem = "Carro " + modelo + " / " + ano + " cadastrado com sucesso!";
 
         alert(mensagem);
-
-       
-
-
-        
 
     }
 </script>
