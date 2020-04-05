@@ -41,6 +41,20 @@
             alert("Não há registros de carros antes de 1886, criado por Karl Benz!");
             return false;
         }
+
+        // captura o ano atual do objeto Date 
+        var anoAtual = new Date().getFullYear();
+
+        //calcula idade do carro 
+        var idadeDocarro = anoAtual - anoDoCarro;
+
+        // aplica o desconto
+        var desconto;
+        if (idadeDoCarro > 10) {
+            desconto = 0.25;
+        } else {
+            desconto = 0;
+        }
         
 
         // prepara mensagem de sucesso
