@@ -1,0 +1,21 @@
+<h1>AutoCarros Setúbal</h1>
+
+<p>Cadastro de Carros para venda</p>
+<p>Para adicionar um novo carro, preencha o formúlario a seguir:</p>
+
+<form id="cadastro" onsubmit="return cadastrarCarro(event)">
+<input type="text" name="modelo" placeholder="Modelo do Carro"><br>
+<input type="text" name="ano" placeholder="Ano"><br>
+<button type="submit">Cadastrar</button>
+</form>
+
+<script>
+    // preco original do carro 10000 (dez mil reais)
+    var precoDoCarro = 10000;
+
+    // vamos dar um desconto de R$ 100, ou seja subtrair 100
+    precoDoCarro = precoDocarro - 100;
+
+    // vamos mostrar o preco do carro para usuario
+    alert(precoDoCarro);
+</script>
