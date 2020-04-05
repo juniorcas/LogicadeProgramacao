@@ -21,22 +21,22 @@
 
         // obtem o modelo do carro 
         var modelo = dadosDeCadastro.get("modelo");
-        if (modelo === "") {
-            alert("Por favor, preencha o modelo do carro!");
+        if (!modelo || !ano) {
+            alert("Por favor, preencha o modelo e o ano do carro!");
             return false;
         }
-
+        
         // obtem o ano do carro
         var ano = dadosDeCadastro.get("ano");
-        if (ano ==="") {
-            alert("Por favor, preencha o ano do carro!");
-            return false;
-        }
+        
 
         // prepara mensagem de sucesso
         var mensagem = "Carro " + modelo + " / " + ano + " cadastrado com sucesso!";
 
         alert(mensagem);
+
+       
+
 
         
 
