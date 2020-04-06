@@ -42,6 +42,11 @@
             return false;
         }
 
+        // prepara mensagem de sucesso
+        var mensagem = "Carro " + modelo + " / " + ano + " cadastrado com sucesso!";
+
+        alert(mensagem);
+
         // captura o ano atual do objeto Date 
         var anoAtual = new Date().getFullYear();
 
@@ -55,12 +60,6 @@
         } else {
             desconto = 0;
         }
-        
-
-        // prepara mensagem de sucesso
-        var mensagem = "Carro " + modelo + " / " + ano + " cadastrado com sucesso!";
-
-        alert(mensagem);
-
+       
     }
 </script>

@@ -17,9 +17,18 @@
     
     <input type="text" name="email" placeholder="Insira seu email"><br>
     
-    <button type="button">Enviar</button> 
+    <button type="button">Enviar</button><br> 
 
     <textarea name="mensagem"></textarea>
-        
+  
 </form> 
+
+<script>
+    function enviarContato(event) {
+        event.preventDefault();
+    }   
+
+    alert("Por favor, preencha o Nome Completo, Email e Mensagem para entrar em contato conosco!");
+    
+</script>
 
