@@ -29,10 +29,16 @@
         if (!modelo || !ano || !preco) {
             alert("Por favor, preencha o modelo, o ano e o preco do carro!");
             return false;
-
+        }
+        
         // obtem o preco do carro 
         var preco = dadosDeCadastro.get("preco");
+        function Number(preco) {
+            if (preco > 0);
+            alert("Preco está incorreto")
+
         }
+        
 
         // converter o ano para número
         ano = Number(ano)
