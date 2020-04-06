@@ -6,6 +6,7 @@
 <form id="cadastro" onsubmit="return cadastrarCarro(event)">
 <input type="text" name="modelo" placeholder="Modelo do Carro"><br>
 <input type="text" name="ano" placeholder="Ano"><br>
+<input type="text" name="preco" placeholder="Preco"><br>
 <button type="submit">Cadastrar</button>
 </form>
 
@@ -25,9 +26,12 @@
 
         // obtem o ano do carro
         var ano = dadosDeCadastro.get("ano");
-        if (!modelo || !ano) {
-            alert("Por favor, preencha o modelo e o ano do carro!");
+        if (!modelo || !ano || !preco) {
+            alert("Por favor, preencha o modelo, o ano e o preco do carro!");
             return false;
+
+        // obtem o preco do carro 
+        var preco = dadosDeCadastro.get("preco");
         }
 
         // converter o ano para número
