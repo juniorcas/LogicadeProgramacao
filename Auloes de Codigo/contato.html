@@ -34,6 +34,10 @@
         event.preventDefault();
         
         var formDeContato = document.querySelector("form");
+        if(!nomeCompleto || !email || !mensagem) {
+            alert("Por favor, preencha o Nome Completo, Email e Mensagem para entrar em contato conosco!");
+            return false;
+        }
 
         var dadosDeContato = new FormData(formDeContato);
 
@@ -41,7 +45,7 @@
         var telefone = dadosDeContato.get("telefone");
         var email = dadosDeContato.get("email");
 
-        alert("Ei, " + nomeCompleto + ", sua mensagem foi enviada com sucesso, por favor, agurde nosso retorno!")
+        alert("Ei, " + nomeCompleto + ", sua mensagem foi enviada com sucesso, por favor, agurde nosso retorno!");
         return false;
 
     }   
