@@ -21,36 +21,29 @@
     
     <button type="submit">Enviar</button>
 
-    
-  
-</form> 
-
-
-
+</form>
 
 <script>
-
+    
     function enviarContato(event) {
-        event.preventDefault();
-        
-        var formDeContato = document.querySelector("form");
-        if(!nomeCompleto || !email || !mensagem) {
-            alert("Por favor, preencha o Nome Completo, Email e Mensagem para entrar em contato conosco!");
-            return false;
-        }
+    event.preventDefault();
 
-        var dadosDeContato = new FormData(formDeContato);
+    var formDeContato = document.querySelector("form");
+    var dadosDeContato = new FormData(formDeContato);
 
-        var nomeCompleto = dadosDeContato.get("nomeCompleto");
-        var telefone = dadosDeContato.get("telefone");
-        var email = dadosDeContato.get("email");
+    var nomeCompleto = dadosDeContato.get("nomeCompleto");
+    var telefone = dadosDeContato.get("telefone");
+    var email = dadosDeContato.get("email");
+    var mensagem = dadosDeContato.get("mensagem");
 
-        alert("Ei, " + nomeCompleto + ", sua mensagem foi enviada com sucesso, por favor, agurde nosso retorno!");
+    if(!nomeCompleto || !email || !mensagem) {
+        alert("Por favor, preencha o Nome Completo, Email e Mensagem para entrar em contato conosco!");
         return false;
+    } 
 
-    }   
+    alert("Ei, " + nomeCompleto + ", sua mensagem foi enviada com sucesso, por favor, aguarde nosso retorno!");
+    return false;
 
-    
-    
+}
+        
 </script>
-
