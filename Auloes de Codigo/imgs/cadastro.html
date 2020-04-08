@@ -23,21 +23,42 @@
 
         // obtem o modelo do carro
         var modelo = dadosDeCadastro.get("modelo");
-        // ... adicionar após a linha que declara a variável modelo
-        if (modelo === "") {
-            alert("Por favor, preencha o modelo do carro!");
-            return false;
-        }
-
-        // ...
-
+     
         // obtem o ano do carro 
         var ano = dadosDeCadastro.get("ano");
-        // ... adicionar após a linha que declara a variável ano
-        if(ano === "") {
-            alert("Por favor, preencha o ano do carro!");
-            return false;
-        }
+       // ... apague o if que verifica o modelo e também o if que verifica o ano 
+       // vamos substituir por essa verificacão:
+       if (!modelo || !ano) {
+           alert("Por favor, preencha o modelo e o ano do carro!");
+           return false;
+       }
+       // ...
+
+       // converte ano para número 
+       ano = Number(ano)
+
+       // verificar se o usuario entrou um numero invalido 
+       if (isNaN(ano)) {
+           alert("Número do ano do carro está invalido");
+           return false;
+       } else if (ano < 1886) { // verifica se o ano do carro é real
+            alert("Não há registros de carros antes de 1886, criado por Karl Benz!")
+            return false; 
+       }
+
+       // captura o ano atual do objeto Date 
+       var anoAtual = new Date().getFullYear();
+
+       // calcula idade do carro 
+       var idadeDoCarro = anoAtual - anoDoCarro;
+
+       // aplica o desconto
+       var desconto;
+       if (idadeDoCarro > 10) {
+           desconto = 0.25;
+       } else {
+           desconto = 0;
+       }
 
         // prepara mensagem de sucesso 
         var mensagem = "Carro " + modelo + " / " + ano + " cadastrado com sucesso!";
