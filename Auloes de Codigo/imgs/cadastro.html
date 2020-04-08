@@ -11,65 +11,12 @@
 </form>
 
 <script>
-    function cadastrarCarro(event) {
-        event.preventDefault();
+    // preco original do carro 10000 (dez mil reais)
+    var precoDoCarro = 10000;
 
-        // seleciona o form do documento e coloca na variavel formDeCadastro 
-        var formDeCadastro = document.querySelector("form");
+    // vamos dar um desconto de R$ 100, ou seja subtrair 100 
+    precoDoCarro = precoDoCarro - 100;
 
-        // obtem os dados dos campos do formúlario 
-        var dadosDeCadastro = new FormData(formDeCadastro);
-
-        // obtem o modelo do carro 
-        var modelo = dadosDeCadastro.get("modelo");
-       
-
-        // obtem o ano do carro
-        var ano = dadosDeCadastro.get("ano");
-        if (!modelo || !ano || !preco) {
-            alert("Por favor, preencha o modelo, o ano e o preco do carro!");
-            return false;
-        }
-        
-        // obtem o preco do carro 
-        var preco = dadosDeCadastro.get("preco");
-        function Number(preco) {
-            if (preco > 0);
-            alert("Preco está incorreto")
-
-        }
-        
-
-        // converter o ano para número
-        ano = Number(ano)
-
-        // verificar se o usuario entrou um numero inválido 
-        if (isNaN(ano)) {
-            alert("Número do ano do carro está inválido");
-            return false;
-        } else if (ano < 1886) { // verificar se o ano do carro é real
-            alert("Não há registros de carros antes de 1886, criado por Karl Benz!");
-            return false;
-        }
-
-        // prepara mensagem de sucesso
-        var mensagem = "Carro " + modelo + " / " + ano + " cadastrado com sucesso!";
-
-        alert(mensagem);
-
-        // captura o ano atual do objeto Date 
-        var anoAtual = new Date().getFullYear();
-
-        //calcula idade do carro 
-        var idadeDocarro = anoAtual - anoDoCarro;
-
-        // aplica o desconto
-        var desconto;
-        if (idadeDoCarro > 10) {
-            desconto = 0.25;
-        } else {
-            desconto = 0;
-        }
-       
-    }
+    // vamos mostrar o preco do carro para usuario
+    alert(precoDoCarro);
 </script>
