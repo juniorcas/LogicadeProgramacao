@@ -12,13 +12,19 @@
 </form>
 
 <script>
+    function cadastrarCarro() {
+        // obtem os dados dos campos do formulário 
+        var dadosDeCadastro = new FormData(formDeCadastro);
 
-    // preco original do carro 10000 (dez mil reais)
-    var precoDoCarro = 10000;
+        // obtem o modelo do carro 
+        var modelo = dadosDeCadastro.get("modelo");
 
-    // vamos dar um desconto de R$100, ou seja subtrair 100
-    precoDoCarro = precoDoCarro - 100;
+        // prepara mensagem de sucesso
+        var mensagem = "O carro " + modelo + " foi cadastrado com sucesso!";
 
-    // vamos mostrar o preco do carro para o usuario 
-    alert(precoDoCarro);
+        alert(mensagem);
+    }
+
+    var formDeCadastro = document.getElementById("cadastro");
+    formDeCadastro.addEventListener("submit", cadastrarCarro);
 </script>
