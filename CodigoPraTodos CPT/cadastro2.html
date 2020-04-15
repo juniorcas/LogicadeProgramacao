@@ -12,7 +12,11 @@
 </form>
 
 <script>
-    function cadastrarCarro() {
+    // captura o valor de evento na funcão
+    function cadastrarCarro(event) {
+        // previne o refresh do form
+        event.preventDefault();
+        
         // obtem os dados dos campos do formulário 
         var dadosDeCadastro = new FormData(formDeCadastro);
 
