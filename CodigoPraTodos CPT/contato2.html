@@ -10,14 +10,38 @@
 
     <p>Entre em contato conosco através do formulário abaixo:</p>
 
-    <form id="contato">
+    <form id="contato" onsubmit="return enviarContato(event)">
 
         <input type="text" name="nomeCompleto" placeholder="Insira seu Nome Completo"><br>
         <input type="text" name="telefone" placeholder="Insira seu Telefone"><br>
         <input type="text" name="email" placeholder="Insira seu Email"><br>
+        <textarea name="mensagem" placeholder="Insira sua Mensagem"></textarea><br>
         <button> Enviar </button>
 
     </form>
+
+    <script>
+        function enviarContato(event){
+            event.preventDefault();
+
+            var formDeContato = document.querySelector("form");
+            var dadosDeContato = new FormData(formDeContato);
+
+            var nomeCompleto = dadosDeContato.get("nomeCompleto");
+            var telefone = dadosDeContato.get("telefone");
+            var email = dadosDeContato.get("email");
+            var mensagem = dadosDeContato.get("mensagem");
+
+            if (!nomeCompleto || !email || !mensagem) {
+                alert("Por favor, preencha o Nome Completo, Email e Mensagem para entrar em contato conosco!");
+                return false;
+            }
+
+            alert("Ei " + nomeCompleto + ", sua mensagem foi enviada com sucesso, por favor aguarde nosso retorno!");
+            return false;
+
+        }
+    </script>
 
 
 </html>
