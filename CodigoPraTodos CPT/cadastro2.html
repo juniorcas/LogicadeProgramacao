@@ -16,9 +16,11 @@
 
         // obtem o modelo do carro 
         var modelo = dadosDeCadastro.get("modelo");
+        // obtem o ano do carro 
+        var ano = dadosDeCadastro.get("ano");
 
         // prepara mensagem de sucesso
-        var mensagem = "O carro " + modelo + " foi cadastrado com sucesso!";
+        var mensagem = "O carro " + modelo + " / " + ano + " foi cadastrado com sucesso!";
 
         alert(mensagem);
     }
