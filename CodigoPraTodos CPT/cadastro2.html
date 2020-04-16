@@ -13,25 +13,21 @@
     function cadastrarCarro(event) {
         // previne o refresh do form
         event.preventDefault();
-        
+
         // obtem os dados dos campos do formulario 
         var dadosDeCadastro = new FormData(formDeCadastro);
 
         // obtem o modelo do carro 
         var modelo = dadosDeCadastro.get("modelo");
-        // ... adicionar após a linha que declara a variavel modelo
-        if (modelo ==="") {
-            alert("Por favor, preencha o modelo do carro!");
-            return false;
-        }
-
         // obtem o ano do carro 
         var ano = dadosDeCadastro.get("ano");
-        // declara a variavel ano
-        if (ano ==="") {
-            alert("Por favor, preencha o ano do carro!");
+        
+        // declara a variavel modelo e ano
+        if (!modelo || !ano) {
+            alert("Por favor, preencha o modelo e o ano do carro!");
             return false;
         }
+        
 
         // prepara mensagem de sucesso
         var mensagem = "O carro " + modelo + " / " + ano + " foi cadastrado com sucesso!";
