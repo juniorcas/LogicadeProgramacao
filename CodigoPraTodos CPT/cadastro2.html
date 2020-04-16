@@ -1,76 +1,30 @@
-<h1>AutoCarros Setúbal</h1>
+<h1>AutoCarro Setúbal</h1>
 
 <p>Cadastro de Carros para venda</p>
 <p>Para adicionar um novo carro, preencha o formulário a seguir:</p>
 
-<form id="cadastro" onsubmit="return cadastrarCarro(event)">
-
+<form id="cadastro">
     <input type="text" name="modelo" placeholder="Modelo do Carro"><br>
     <input type="text" name="ano" placeholder="Ano"><br>
-    <input type="text" name="preço" placeholder="Preço"><br>
     <button type="submit">Cadastrar</button>
-
 </form>
 
-
 <script>
-    // captura o valor de evento na funcão
-    function cadastrarCarro(event) {
-        // previne o refresh do form
-        event.preventDefault();
-
-        var formDeCadastro = document.getElementById("cadastro");
-        
-        // obtem os dados dos campos do formulário 
+    function cadastrarCarro() {
+        // obtem os dados dos campos do formulario 
         var dadosDeCadastro = new FormData(formDeCadastro);
 
         // obtem o modelo do carro 
         var modelo = dadosDeCadastro.get("modelo");
-        
-        // obtem o ano do carro 
-        var ano = dadosDeCadastro.get("ano");
-
-        // obtem o preço do carro
-        var preço = dadosDeCadastro.get("preço");
-        // ... apague o if que verifica o modelo e também o if que verifica o ano
-        // vamos substituir por essa verificaão 
-        if (!modelo || !ano || !preço) {
-            alert("Por favor, preencha o modelo, o ano e o preço do carro!");
-            return false;
-        }
-
-        // converte o ano para número 
-        ano = Number(ano)
-
-        // verificar se o usuário entrou um número inválido
-        if (isNaN(ano)) {
-            alert("Número do ano do carro está inválido");
-            return false;
-        } else if (ano < 1886) { // verificar se o ano do carro é real
-            alert("Não há registros de carros antes de 1886, criado por Karl Benz!");
-            return false;
-        }
-
-        // converte o preço para número
-        preço = Number(preço)
-
-        // verificar se o usuário entrou um número inválido
-        if (isNaN(preço)) {
-            alert("Preço está incorreto");
-            return false;
-        } else if (preço > 0) { // verificar se o preço é maior que zero
-            alert("Preço precisa ser maior que zero");
-            return false;
-        }
-
-        
 
         // prepara mensagem de sucesso
-        var mensagem = "O carro " + modelo + " / " + ano + " foi cadastrado com sucesso!";
+        var mensagem = "O carro " + modelo + " foi cadastrado com sucesso!";
 
         alert(mensagem);
     }
 
-    
-    
+    var formDeCadastro = document.getElementById("cadastro");
+    formDeCadastro.addEventListener("submit", cadastrarCarro);
+
+
 </script>
