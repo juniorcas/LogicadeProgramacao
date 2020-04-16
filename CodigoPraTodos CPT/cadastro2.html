@@ -18,6 +18,8 @@
     function cadastrarCarro(event) {
         // previne o refresh do form
         event.preventDefault();
+
+        var formDeCadastro = document.getElementById("cadastro");
         
         // obtem os dados dos campos do formulário 
         var dadosDeCadastro = new FormData(formDeCadastro);
@@ -69,6 +71,6 @@
         alert(mensagem);
     }
 
-    var formDeCadastro = document.getElementById("cadastro");
-    formDeCadastro.addEventListener("submit", cadastrarCarro);
+    
+    
 </script>
