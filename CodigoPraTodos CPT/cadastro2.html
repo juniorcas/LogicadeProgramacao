@@ -3,10 +3,11 @@
 <p>Cadastro de Carros para venda</p>
 <p>Para adicionar um novo carro, preencha o formulário a seguir:</p>
 
-<form id="cadastro">
+<form id="cadastro" onsubmit="return cadastrarCarro(event)">
 
     <input type="text" name="modelo" placeholder="Modelo do Carro"><br>
     <input type="text" name="ano" placeholder="Ano"><br>
+    <input type="text" name="preço" placeholder="Preço"><br>
     <button type="submit">Cadastrar</button>
 
 </form>
@@ -26,10 +27,13 @@
         
         // obtem o ano do carro 
         var ano = dadosDeCadastro.get("ano");
+
+        // obtem o preço do carro
+        var preço = dadosDeCadastro.get("preço");
         // ... apague o if que verifica o modelo e também o if que verifica o ano
         // vamos substituir por essa verificaão 
-        if (!modelo || !ano) {
-            alert("Por favor, preencha o modelo e o ano do carro!");
+        if (!modelo || !ano || !preço) {
+            alert("Por favor, preencha o modelo, o ano e o preço do carro!");
             return false;
         }
 
@@ -40,8 +44,20 @@
         if (isNaN(ano)) {
             alert("Número do ano do carro está inválido");
             return false;
-        } else if (ano < 1886) { // vreificar se o ano do carro é real
+        } else if (ano < 1886) { // verificar se o ano do carro é real
             alert("Não há registros de carros antes de 1886, criado por Karl Benz!");
+            return false;
+        }
+
+        // converte o preço para número
+        preço = Number(preço)
+
+        // verificar se o usuário entrou um número inválido
+        if (isNaN(preço)) {
+            alert("Preço está incorreto");
+            return false;
+        } else if (preço > 0) { // verificar se o preço é maior que zero
+            alert("Preço precisa ser maior que zero");
             return false;
         }
 
