@@ -11,6 +11,7 @@
 
 </form>
 
+
 <script>
     // captura o valor de evento na funcão
     function cadastrarCarro(event) {
@@ -32,7 +33,18 @@
             return false;
         }
 
-        // ...
+        // converte o ano para número 
+        ano = Number(ano)
+
+        // verificar se o usuário entrou um número inválido
+        if (isNaN(ano)) {
+            alert("Número do ano do carro está inválido");
+            return false;
+        } else if (ano < 1886) { // vreificar se o ano do carro é real
+            alert("Não há registros de carros antes de 1886, criado por Karl Benz!");
+            return false;
+        }
+        
 
         // prepara mensagem de sucesso
         var mensagem = "O carro " + modelo + " / " + ano + " foi cadastrado com sucesso!";
