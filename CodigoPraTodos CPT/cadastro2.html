@@ -16,6 +16,12 @@
 
         // obtem o modelo do carro 
         var modelo = dadosDeCadastro.get("modelo");
+        // ... adicionar após a linha que declara a variavel modelo
+        if (modelo ==="") {
+            alert("Por favor, preencha o modelo do carro!");
+            return false;
+        }
+
         // obtem o ano do carro 
         var ano = dadosDeCadastro.get("ano");
 
