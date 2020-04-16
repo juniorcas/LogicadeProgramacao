@@ -24,6 +24,11 @@
 
         // obtem o ano do carro 
         var ano = dadosDeCadastro.get("ano");
+        // declara a variavel ano
+        if (ano ==="") {
+            alert("Por favor, preencha o ano do carro!");
+            return false;
+        }
 
         // prepara mensagem de sucesso
         var mensagem = "O carro " + modelo + " / " + ano + " foi cadastrado com sucesso!";
