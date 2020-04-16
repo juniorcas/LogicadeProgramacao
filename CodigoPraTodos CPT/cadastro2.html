@@ -10,7 +10,10 @@
 </form>
 
 <script>
-    function cadastrarCarro() {
+    function cadastrarCarro(event) {
+        // previne o refresh do form
+        event.preventDefault();
+        
         // obtem os dados dos campos do formulario 
         var dadosDeCadastro = new FormData(formDeCadastro);
 
