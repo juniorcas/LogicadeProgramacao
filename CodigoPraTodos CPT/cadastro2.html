@@ -30,12 +30,14 @@
         // obtem os dados dos campos do formulario 
         var dadosDeCadastro = new FormData(formDeCadastro);
 
-        // obtem o modelo do carro 
-        var modelo = dadosDeCadastro.get("modelo");
-        // obtem o ano do carro 
-        var ano = dadosDeCadastro.get("ano");
-        // obtem o preco do carro
-        var preco = dadosDeCadastro.get("preco");
+        var carro = {
+            marca: dadosDeCadastro.get("marca"),
+            modelo: dadosDeCadastro.get("modelo"),
+            ano: Number(dadosDeCadastro.get("ano")), // capturamos e convertemos para númerico na mesma linha
+            preco: Number(dadosDeCadastro.get("preco")),
+            descricao: dadosDeCadastro.get("descricao"),
+            
+        };
         
         // verifica se o campo modelo, ano ou preco esta vazio e retorna mensagem de alerta
         if (!modelo || !ano || !preco) {
