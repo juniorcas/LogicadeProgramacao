@@ -25,7 +25,7 @@
             // previne o refresh do form
             event.preventDefault();
 
-           
+            // obtem os dados do campo do formulario 
             var dadosDeContato = new FormData(formDeContato);
 
             var nomeCompleto = dadosDeContato.get("nomeCompleto");
@@ -38,6 +38,7 @@
                 return false;
             }
 
+            // prepara mensagem de sucesso
             alert("Ei " + nomeCompleto + ", sua mensagem foi enviada com sucesso, por favor aguarde nosso retorno!");
             return false;
 
