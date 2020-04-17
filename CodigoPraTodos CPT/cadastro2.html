@@ -25,7 +25,7 @@
         // obtem o preco do carro
         var preco = dadosDeCadastro.get("preco");
         
-        // declara a variavel modelo e ano
+        // verifica se o campo modelo, ano ou preco esta vazio e retorna mensagem de alerta
         if (!modelo || !ano || !preco) {
             alert("Por favor, preencha o modelo, o ano e o preco do carro!");
             return false;
@@ -51,7 +51,7 @@
         if(isNaN(preco)) {
             alert("Preco está incorreto");
             return false;
-        } else if (preco > 0) { // verifica se o preco é maior que zero 0
+        } else if (preco < 0) { // verifica se o preco é maior que zero 0
             alert("Preco precisa ser maior que zero");
             return false;
         }
