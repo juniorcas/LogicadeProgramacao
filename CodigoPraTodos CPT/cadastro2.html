@@ -6,6 +6,7 @@
 <form id="cadastro">
     <input type="text" name="modelo" placeholder="Modelo do Carro"><br>
     <input type="text" name="ano" placeholder="Ano"><br>
+    <input type="text" name="preco" placeholder="Preco"><br>
     <button type="submit">Cadastrar</button>
 </form>
 
@@ -21,16 +22,18 @@
         var modelo = dadosDeCadastro.get("modelo");
         // obtem o ano do carro 
         var ano = dadosDeCadastro.get("ano");
+        // obtem o preco do carro
+        var preco = dadosDeCadastro.get("preco");
         
         // declara a variavel modelo e ano
-        if (!modelo || !ano) {
-            alert("Por favor, preencha o modelo e o ano do carro!");
+        if (!modelo || !ano || !preco) {
+            alert("Por favor, preencha o modelo, o ano e o preco do carro!");
             return false;
         }
 
         // converte o ano para numero 
         ano = Number(ano)
-
+        
         // verificar se o usuario entrou um numero inválido 
         if (isNaN(ano)) {
             alert("Número do ano do carro está inválido");
@@ -39,6 +42,18 @@
             alert("Não há registros de carros antes de 1886, criado por Karl Benz!");
             return false;
         
+        }
+
+        // converte o preco para numero 
+        preco = Number(preco)
+
+        // verifica se o usuario entrou um numero inválido
+        if(isNaN(preco)) {
+            alert("Preco está incorreto");
+            return false;
+        } else if (preco > 0) { // verifica se o preco é maior que zero 0
+            alert("Preco precisa ser maior que zero");
+            return false;
         }
 
        
