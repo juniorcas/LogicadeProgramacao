@@ -27,6 +27,18 @@
             alert("Por favor, preencha o modelo e o ano do carro!");
             return false;
         }
+
+        // converte o ano para numero 
+        ano = Number(ano)
+
+        // verificar se o usuario entrou um numero inválido 
+        if (isNaN(ano)) {
+            alert("Número do ano do carro está inválido");
+            return false;
+        } else if (ano < 1886) { // verifica se o ano do carro é real
+            alert("Não há registros de carros antes de 1886, criado por Karl Benz!");
+            return false;
+        }
         
 
         // prepara mensagem de sucesso
