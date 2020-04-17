@@ -4,9 +4,21 @@
 <p>Para adicionar um novo carro, preencha o formulário a seguir:</p>
 
 <form id="cadastro">
-    <input type="text" name="modelo" placeholder="Modelo do Carro"><br>
-    <input type="text" name="ano" placeholder="Ano"><br>
-    <input type="text" name="preco" placeholder="Preco"><br>
+    <label for="marca">Marca:</label>
+    <input type="text" name="marca" id="marca" palceholder="Volkswagen" required>
+    <br>
+    <label for="modelo">Modelo:</label>
+    <input type="text" name="modelo" id="modelo" placeholder="Gol" required>
+    <br>
+    <label for="ano">Ano:</label>
+    <input type="text" name="ano" id="ano" placeholder="2013" required>
+    <br>
+    <label for="preco">Preco:</label>
+    <input type="text" name="preco" id="preco" placeholder="19350" required>
+    <br>
+    <label for="descricao">Descricão:</label>
+    <textarea name="descricao" id="descricao" rows="5" placeholder="Carro lindo e confortável"></textarea>
+    <br>
     <button type="submit">Cadastrar</button>
 </form>
 
