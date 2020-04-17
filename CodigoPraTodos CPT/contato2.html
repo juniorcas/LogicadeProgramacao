@@ -10,7 +10,7 @@
 
     <p>Entre em contato conosco através do formulário abaixo:</p>
 
-    <form id="contato" onsubmit="return enviarContato(event)">
+    <form id="contato">
 
         <input type="text" name="nomeCompleto" placeholder="Insira seu Nome Completo"><br>
         <input type="text" name="telefone" placeholder="Insira seu Telefone"><br>
@@ -22,9 +22,10 @@
 
     <script>
         function enviarContato(event){
+            // previne o refresh do form
             event.preventDefault();
 
-            var formDeContato = document.querySelector("form");
+           
             var dadosDeContato = new FormData(formDeContato);
 
             var nomeCompleto = dadosDeContato.get("nomeCompleto");
@@ -41,6 +42,9 @@
             return false;
 
         }
+
+        var formDeContato = document.querySelector("form");
+        formDeContato.addEventListener("submit", enviarContato);
     </script>
 
 
