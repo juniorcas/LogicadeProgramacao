@@ -39,6 +39,10 @@
             
         };
 
+        // converter para texto e imprimir na tela 
+        var carroJSON = JSON.stringify(carro);
+        document.write(carroJSON);
+
 
         // converte o ano para numero 
         ano = Number(carro.ano)
@@ -82,8 +86,6 @@
         // salvar o texto no banco usando a chave `carros`
         localStorage.setItem("carros", carroEmTexto);
     }
-
-     
 
         
 </script>
