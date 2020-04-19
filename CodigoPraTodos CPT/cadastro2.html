@@ -39,40 +39,36 @@
             
         };
         
-        // verifica se o campo modelo, ano ou preco esta vazio e retorna mensagem de alerta
-        if (!modelo || !ano || !preco) {
-            alert("Por favor, preencha o modelo, o ano e o preco do carro!");
-            return false;
-        }
+        
 
         // converte o ano para numero 
-        ano = Number(ano)
+        ano = Number(carro.ano)
         
         // verificar se o usuario entrou um numero inválido 
-        if (isNaN(ano)) {
+        if (isNaN(carro.ano)) {
             alert("Número do ano do carro está inválido");
             return false;
-        } else if (ano < 1886) { // verifica se o ano do carro é real
+        } else if (carro.ano < 1886) { // verifica se o ano do carro é real
             alert("Não há registros de carros antes de 1886, criado por Karl Benz!");
             return false;
         
         }
 
         // converte o preco para numero 
-        preco = Number(preco)
+        preco = Number(carro.preco)
 
         // verifica se o usuario entrou um numero inválido
-        if(isNaN(preco)) {
+        if(isNaN(carro.preco)) {
             alert("Preco está incorreto");
             return false;
-        } else if (preco < 0) { // verifica se o preco é maior que zero 0
+        } else if (carro.preco <= 0) { // verifica se o preco é maior que zero 0
             alert("Preco precisa ser maior que zero");
             return false;
         }
 
        
         // prepara mensagem de sucesso
-        var mensagem = "O carro " + modelo + " / " + ano + " foi cadastrado com sucesso!";
+        var mensagem = "Carro" + marca + modelo + " / " + ano + " cadastrado com sucesso!";
 
         alert(mensagem);
     }
