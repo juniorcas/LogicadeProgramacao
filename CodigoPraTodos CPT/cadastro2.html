@@ -38,8 +38,7 @@
             descricao: dadosDeCadastro.get("descricao"),
             
         };
-        
-        
+
 
         // converte o ano para numero 
         ano = Number(carro.ano)
@@ -76,5 +75,15 @@
     var formDeCadastro = document.getElementById("cadastro");
     formDeCadastro.addEventListener("submit", cadastrarCarro);
 
+    
+    function salvarCarro(carro) {
+        // converter o objeto carro para texto
+        var carroEmTexto = JSON.stringify(carro);
+        // salvar o texto no banco usando a chave `carros`
+        localStorage.setItem("carros", carroEmTexto);
+    }
 
+     
+
+        
 </script>
