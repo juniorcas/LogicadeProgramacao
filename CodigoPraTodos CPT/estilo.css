@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color: gray;
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: black;
+    text-shadow: 1px 1px 1px gray;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;  
+}
