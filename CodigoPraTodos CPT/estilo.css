@@ -20,9 +20,9 @@ body {
 }
 
 div#interface {
-    width: 500px;
+    width: 600px;
     background-color: #ffffff;
-    margin: 10px, 10px, 10px, 10px;
+    margin: -20px auto 0px auto;
 }
 
 p {
