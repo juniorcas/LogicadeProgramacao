@@ -14,9 +14,23 @@ h2 {
     text-shadow: 1px 1px 1px gray;
 }
 
+body {
+    background-color: white;
+    color: rgba(0,0,0,1);
+}
+
+div#interface {
+    width: 500px;
+}
+
 p {
     text-align: justify;
-    text-indent: 50px;  
+    text-indent: 10px; 
+    font-size: 12px; 
+}
+
+h3 {
+    font-size: 14px;
 }
 
 /* Formatação de imagens com legendas */
