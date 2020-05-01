@@ -43,6 +43,11 @@ header#cabecalho img#icone {
     top: 20px;
 }
 
+header#cabecalho {
+    border-bottom: 1px black solid;
+    height: 115px;
+}
+
 /* Formatação de imagens com legendas */
 figure.foto-legenda {
     position: relative;
