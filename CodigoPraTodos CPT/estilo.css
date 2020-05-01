@@ -46,7 +46,10 @@ header#cabecalho img#icone {
 header#cabecalho {
     border-bottom: 1px black solid;
     height: 115px;
+    background: url(imgs/glass_logo_pequeno.png) no-repeat 0px 45px; 
 }
+
+
 
 /* Formatação de imagens com legendas */
 figure.foto-legenda {
