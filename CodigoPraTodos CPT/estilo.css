@@ -37,6 +37,12 @@ h3 {
     font-size: 14px;
 }
 
+header#cabecalho img#icone {
+    position: absolute;
+    left: 458px;
+    top: 20px;
+}
+
 /* Formatação de imagens com legendas */
 figure.foto-legenda {
     position: relative;
