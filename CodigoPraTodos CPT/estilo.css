@@ -49,3 +49,8 @@ figure.foto-legenda:hover figcaption {
 }
 
 /* Formatacão do Menu */
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+}
