@@ -69,3 +69,7 @@ nav#menu li {
     padding: 10px;
     margin: 2px;
 }
+
+nav#menu h3 {
+    display: none;
+}
