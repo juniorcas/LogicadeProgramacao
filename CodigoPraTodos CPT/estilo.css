@@ -45,11 +45,24 @@ header#cabecalho img#icone {
 
 header#cabecalho {
     border-bottom: 1px black solid;
-    height: 115px;
-    background: url(imgs/glass_logo_pequeno.png) no-repeat 0px 45px; 
+    height: 120px;
+    background: url(imgs/glass_logo_pequeno.png) no-repeat 0px 80px; 
 }
 
+header#cabecalho h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: gray;
+    text-shadow: 1px 1px 1px black;
+    padding: 0px;
+}
 
+header#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 10pt;
+    padding: 0px;
+}
 
 /* Formatação de imagens com legendas */
 figure.foto-legenda {
