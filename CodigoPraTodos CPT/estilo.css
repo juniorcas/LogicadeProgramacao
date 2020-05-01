@@ -70,6 +70,10 @@ nav#menu li {
     margin: 2px;
 }
 
+nav#menu li:hover {
+    background-color: #606060;
+}
+
 nav#menu h3 {
     display: none;
 }
