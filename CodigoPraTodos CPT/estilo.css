@@ -45,7 +45,7 @@ header#cabecalho img#icone {
 
 header#cabecalho {
     border-bottom: 1px black solid;
-    height: 120px;
+    height: 115px;
     background: url(imgs/glass_logo_pequeno.png) no-repeat 0px 80px; 
 }
 
@@ -55,6 +55,7 @@ header#cabecalho h1 {
     color: gray;
     text-shadow: 1px 1px 1px black;
     padding: 0px;
+    margin-bottom: 0px;
 }
 
 header#cabecalho h2 {
@@ -62,6 +63,7 @@ header#cabecalho h2 {
     color: black;
     font-size: 10pt;
     padding: 0px;
+    margin-top: 0px;
 }
 
 /* Formatação de imagens com legendas */
