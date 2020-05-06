@@ -49,8 +49,34 @@
                 color: black;
             }
 
-            
+            /* Formatacão de imagens com legendas */
+            figure.foto-legenda {
+                position: relative;
+                border:6px solid gray;
+                box-shadow: 1px 1px 4px gray;
+            }
 
+            figure.foto-legenda img {
+                width: 100%;
+                height: 100%;
+            }
+
+            figure.foto-legenda figcaption {
+                opacity: 0;
+                position: absolute;
+                top: 0px;
+                background-color: rgba(0,0,0,.6);
+                color: black;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                transition: 2s;
+            }
+
+            figure.foto-legenda:hover figcaption {
+                opacity: 1;
+            }
 
 
             /* Formatracão do Menu */
