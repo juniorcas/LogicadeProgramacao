@@ -4,10 +4,12 @@
     <head>
 
         <meta charset="UTF-8">
+
         <title>O que é Educação Financeira?</title>
+
         <style>
-            body {
-                background-color: white;
+             body {
+        background-color: white;
             }
 
             div#interface {
@@ -89,7 +91,33 @@
                 text-transform: none;
                 position: absolute;
                 top: -10px;
-                left: 250px;
+                left: 450px;
+            }
+
+            nav#menu li {
+                display: inline-block;
+                background-color: gray;
+                font-size: 8pt;
+                padding: 2px;
+                margin: 1px;
+                transform: 1s;
+            }
+
+            nav#menu li:hover {
+                background-color: white;
+            }
+
+            nav#menu h5 {
+                display: none;
+            }
+
+            nav#menu a {
+                color: white;
+                text-decoration: none;
+            }
+
+            nav#menu a:hover {
+                color: gray;
             }
 
         </style>
@@ -102,12 +130,10 @@
 
             <header id="cabecalho">
                 <hgroup>
-
                     <h1 id="icone">Cas investimento</h1>
-
                 </hgroup>
 
-                <nav>
+                <nav id="menu">
                     <h5>Menu Principal</h5>
                     <ul>
                         <li><a href="home.html">Página Principal</a></li>
@@ -120,7 +146,7 @@
             
             <h2 style="text-align: center;">O que é Educação Financeira?</h2>
 
-            <figure>
+            <figure class="foto-legenda">
                 <img src="imgs/educacao.jpg" height="225">
 
                 <figcaption>
