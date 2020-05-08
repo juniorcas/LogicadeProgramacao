@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Faça a Diferença!</title>
+        <style>
+            body {
+                background-color: white;
+                
+            }
+
+            div#interface {
+                width: 600px;
+                background-color: white;
+                margin: 80px auto 30px auto;
+                box-shadow: 0px 0px 30px gray;
+                padding: 10px;
+            }
+
+            header#cabecalho h1#icone {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                color: rgb(150, 145, 145);
+                text-shadow: 1px 1px 4px gray;
+                position: absolute;
+                right: 1050px;
+                top: -10px;
+            }
+            
+            h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                color: gray;
+                text-shadow: 1px 1px 4px gray;
+                align-items: center;
+            }
+
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 8pt;
+                color: gray;
+                text-align: center;
+            }
+
+            h6 {
+                font-family: monospace;
+                font-size: 12pt;
+                color: white;
+            }
+
+            p {
+                text-align: center;
+                text-indent: 10px;
+                font-size: 15pt;
+                color: white;
+            }
+
+
+            /* Formatacao de imagens com legendas */
+            figure.foto-legenda {
+                position: relative;
+                border:6px solid gray;
+                box-shadow: 1px 1px 15px gray;
+            }
+
+            figure.foto-legenda img {
+                width: 100%;
+                height: 100%;
+            }
+
+            figure.foto-legenda figcaption {
+                opacity: 0;
+                position: absolute;
+                top: 0px;
+                background-color: rgba(0,0,0,.6);
+                color: black;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                transition: opacity 2s;
+            }
+
+            figure.foto-legenda:hover figcaption {
+                opacity: 1;
+            }
+
+            /* Formatacao do Menu */
+            nav#menu {
+                display: block;
+            }
+
+            nav#menu ul {
+                list-style: none;
+                text-transform: none;
+                position: absolute;
+                top: -10px;
+                left: 600px;
+            }
+
+            nav#menu li {
+                display: inline-block;
+                background-color: gray;
+                font-size: 12pt;
+                padding: 2px;
+                margin: 1px;
+                transition: 1s;
+            }
+
+            nav#menu li:hover {
+                background-color: white;
+            }
+
+            nav#menu h5 {
+                display: none;
+            }
+
+            nav#menu a {
+                color:  white;
+                text-decoration: none;
+            }
+
+            nav#menu a:hover {
+                color: gray;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="interface">
+
+            <header id="cabecalho">
+            <hgroup>
+                <h1 id="icone">CAS INVESTIMENTO</h1>
+            </hgroup>
+            <nav id="menu">
+                <h5>Menu Principal</h5>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="educacao.html">Educação Financeira</a></li>
+                    <li><a href="perfil.html">Perfil de Investidor</a></li>
+                    <li><a href="modalidades.html">Modalidades de Investimento</a></li>
+                    <li><a href="assine.html">Assine Agora</a></li>
+                </ul>
+            </nav>
+            </header>
+
+            <h2 style="text-align: center;">Faça a Diferença para o Seu Futuro</h2>
+            
+            <figure class="foto-legenda">
+                <img src="imgs/diferenca01.jpg" height="150">
+
+                <figcaption>
+                    <h6>° Se tiver alguma dívida, ficar com suas finanças no positivo deve ser uma meta. Para isso, busque orientação e defina uma estratégia que o ajude a sair dessa.<br>° Rever o orçamento pelo menos uma vez ao ano é fundamental. Considere se os gastos que você tem feito são realmente necessários.<br>° Não se esqueça: tenha disciplina e paciência para poupar, nem que seja um pouquinho por mês. Assim, você garante dinheiro para emergências e sonhos futuros.<br>° Ao receber seu salário, separe um valor para sua poupança e invista na realização de seus objetivos.</h6>
+                </figcaption>
+            </figure>
+
+        </div>
+
+        <footer id="rodape">
+
+            <h3>Copyright &copy; 2020 - by CARLOS ALBERTO<br><a href="https://www.facebook.com/">Facebook</a> ¦ <a href="https://www.instagram.com/">Instagram</a></h3>
+
+        </footer>
+
+    </body>
+</html>
