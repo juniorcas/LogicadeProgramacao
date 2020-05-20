@@ -17,7 +17,9 @@
     <script>
 
         var nome = prompt("Qual é o seu nome?");
-        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.`);
+        document.write(`Olá, <b>${nome}</b>! Seu nome tem ${nome.length} letras.<br>`);
+        document.write(`Seu nome em maiúsculas é <b>${nome.toUpperCase()}</b> <br>`)
+        document.write(`Seu nome em minúsculas é <b>${nome.toLowerCase()}</b>`)
     </script>
 </body>
 </html>
