@@ -11,6 +11,10 @@
 
     <style>
 
+        body {
+            background-color: gray;
+        }
+
         div#area {
             background: black;
             color: white;
@@ -19,6 +23,7 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
+            box-shadow: 0px 0px 30px black;
         }
     </style>
 
@@ -26,9 +31,17 @@
 
 <body>
 
-    <div id="area">
+    <div id="area" onclick="clicar()">
         Interaja...
     </div>
+
+    <script>
+
+        function clicar() {
+            var a = document.getElementById('area')
+            a.innerText = 'Clicou!'
+        }
+    </script>
     
 </body>
 </html>
