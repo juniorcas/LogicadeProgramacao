@@ -26,7 +26,11 @@
             var txtv = document.querySelector('input#txtvel')
             var resultado = document.querySelector('div#resultado')
             var vel = Number(txtv.value)
-            resultado.innerHTML = `Sua velocidade atual é de <b>${vel}Km/h</b>.`
+            resultado.innerHTML = `<p>Sua velocidade atual é de <b>${vel}Km/h</b>.</p>`
+            if (vel > 80) {
+                resultado.innerHTML += `<p>Você está <b>Multado</b> por excesso de velocidade.</p>`
+            }
+            resultado.innerHTML += `<p>Dirija sempre com cinto de segurança!`
         }
     </script>
 
