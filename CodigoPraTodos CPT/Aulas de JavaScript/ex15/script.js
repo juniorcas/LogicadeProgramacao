@@ -15,7 +15,7 @@ function carregar() {
     } else {
         // Boa Noite!
         img.src = "fotonoite.jpg"
-        document.body.style. background = "#1b3035"
+        document.body.style. background = "#213337"
     }
 }
 
