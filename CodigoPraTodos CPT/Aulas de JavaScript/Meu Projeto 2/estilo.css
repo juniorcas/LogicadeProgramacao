@@ -1,0 +1,19 @@
+body {
+    background-color: #5a5859;
+}
+
+header {
+    color: black;
+    text-align: center;
+}
+
+#rel {
+    text-align: center;
+    color: #0f0;
+    font-weight: bold;
+    font-size: 50px;
+    width: 300px;
+    background-color: black;
+    border-radius: 15px;
+}
+
