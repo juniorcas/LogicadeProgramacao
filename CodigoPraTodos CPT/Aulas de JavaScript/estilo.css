@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    background: black;
+}
+
+header {
+    height: auto;
+    overflow: hidden;
+}
