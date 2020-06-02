@@ -15,7 +15,7 @@
 
 <body>
     
-    <form action="">
+    <form id="cadastrar">
 
         <h2>Crie sua conta para ter acesso ao nosso conteúdo </h2>
 
@@ -23,9 +23,16 @@
         <input type="text" name="email" placeholder="E-mail*">
         <input type="text" name="telefone" placeholder="Telefone celular*">
         <textarea name="mensagem" placeholder="Escreva aqui sobre seu Perfil de Investimento*"></textarea>
-        <input type="button" value="ENVIAR" id="botao">
+        <input type="button" value="CADASTRAR" id="botao">
 
     </form>
+
+    <script>
+
+        localStorage.setItem("cadastrar", "CASResearch")
+
+        
+    </script>
     
 </body>
 
