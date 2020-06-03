@@ -1,132 +1,133 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
-  <head>
+<head>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Future Capital - Login</title>
+  <title>Login</title>
 
-    <style>
-         * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        }
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
 
-        html,
-        body {
-        height: 100vh;
-        }
+    body {
+      font-family: monospace;
+      background: black;
+      color: yellow;
+    }
 
-        body {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-family: Roboto, Arial, sans-serif;
-        }
+   .background {
+     background: url(citynight.jpg) no-repeat;
+     background-size: cover;
+     height: 100vh;
+     display: flex;
+   } 
 
-        section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        }
+   .text, .box {
+     margin-top: 35vh;
+     flex: 0.8;
+   }
 
-        h1 {
-        font-size: 32px;
-        letter-spacing: 1px;
-        margin: 20px 0;
-        color: rgba(255, 255, 0, 0.897);
-        }
+   .text {
+     margin-left: 10%;
+     font-weight: 300px;
+   }
 
-        form {
-        margin: 20px 0;
-        background-color: white;
-        padding: 30px 25px;
-        border-radius: 5px;
-        }
+   .box {
+     margin-left: 25%;
+   }
 
-        form .input-block {
-        margin-bottom: 20px;
-        }
+   .text h1 {
+     font-size: 70px;
+     color: yellow;
+     font-weight: 500;
+   }
 
-        form .input-block label {
-        font-size: 14px;
-        color: black;
-        }
+   .text p {
+     font-size: 20px;
+     color: yellow;
+     font-weight: 300;
+   }
 
-        form .input-block input {
-        width: 100%;
-        display: block;
-        margin-top: 8px;
-        padding: 7px;
-        font-size: 16px;
-        color: #7159c1;
-        border-radius: 2px;
-        border: 1px solid #ccddef;
-        outline-color: #7159c1;
-        }
+   .text p a {
+     color: yellow;
+     font-weight: 700;
+   }
 
-        form .btn-login {
-        display: block;
-        min-width: 120px;
-        border: none;
-        background-color: rgba(255, 255, 0, 0.897);
-        color: black;
-        border-radius: 25px;
-        margin: auto;
-        padding: 7px;
-        }
+   .form {
+     background: transparent;
+     color: #fff;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     width: 250px;
+   }
 
-        /* APARIÇÃO DO FORM */
+   input {
+     margin: 20px 0;
+     padding: 10px;
+     background: transparent;
+     border: none;
+     outline: none;
+     color: yellow;
+     font-family: monospace;
+   }
 
-        form {
-        animation-name: fade;
-        animation-duration: 500ms;
-        }
+   .username, .password {
+     border-bottom: 1px solid yellow;
+   }
 
-        @keyframes fade {
-        from {
-            opacity: 0;
-            transform: scale(0.9);
-        }
-        to {
-            opacity: 1;
-            transform: scale(1);
-        }
-        }
-    </style>
+   .button {
+     background: transparent;
+     border: 1px solid yellow;
+     color: yellow;
+     font-size: 18px;
+   }
 
-  </head>
+   .button:hover {
+     background: #fff;
+     color: black;
+   }
+  </style>
 
-  <body>
+</head>
 
-    <section class="form-section">
+<body>
 
-      <h1>Future Capital</h1>
+  <main>
 
-      <div class="form-wrapper">
-        <form action="">
-          <div class="input-block">
-            <label for="login-email">Email</label>
-            <input type="email" id="login-email" />
-          </div>
+    <div class="background">
 
-          <div class="input-block">
-            <label for="login-password">Password</label>
-            <input type="password" id="login-password" />
-          </div>
-          <button type="submit" class="btn-login">Login</button>
-        </form>
+      <div class="text">
+
+        <h1>Login</h1>
+        <p>No Account ? <a href="ex17.html">Sign up</a></p>
+
       </div>
 
-    </section>
+      <div class="form">
 
-    <script>
+        <form class="form">
 
-        
-    </script>
-  </body>
+          <input type="text" class="username" placeholder="Username" required>
+          <input type="password" class="password" placeholder="Password" required>
+          <input type="submit" class="button" value="Login">
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </main>
+  
+</body>
+
 </html>
