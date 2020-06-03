@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <title>Future Capital - Login</title>
+
+    <style>
+         * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
+        html,
+        body {
+        height: 100vh;
+        }
+
+        body {
+        background-color: rgba(0, 0, 0, 0.9);
+        font-family: Roboto, Arial, sans-serif;
+        }
+
+        section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+        margin: 20px 0;
+        color: rgba(255, 255, 0, 0.897);
+        }
+
+        form {
+        margin: 20px 0;
+        background-color: white;
+        padding: 30px 25px;
+        border-radius: 5px;
+        }
+
+        form .input-block {
+        margin-bottom: 20px;
+        }
+
+        form .input-block label {
+        font-size: 14px;
+        color: black;
+        }
+
+        form .input-block input {
+        width: 100%;
+        display: block;
+        margin-top: 8px;
+        padding: 7px;
+        font-size: 16px;
+        color: #7159c1;
+        border-radius: 2px;
+        border: 1px solid #ccddef;
+        outline-color: #7159c1;
+        }
+
+        form .btn-login {
+        display: block;
+        min-width: 120px;
+        border: none;
+        background-color: rgba(255, 255, 0, 0.897);
+        color: black;
+        border-radius: 25px;
+        margin: auto;
+        padding: 7px;
+        }
+
+        /* APARIÇÃO DO FORM */
+
+        form {
+        animation-name: fade;
+        animation-duration: 500ms;
+        }
+
+        @keyframes fade {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+        }
+    </style>
+
+  </head>
+
+  <body>
+
+    <section class="form-section">
+
+      <h1>Future Capital</h1>
+
+      <div class="form-wrapper">
+        <form action="">
+          <div class="input-block">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" />
+          </div>
+
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" />
+          </div>
+          <button type="submit" class="btn-login">Login</button>
+        </form>
+      </div>
+
+    </section>
+
+    <script>
+
+        
+    </script>
+  </body>
+</html>
