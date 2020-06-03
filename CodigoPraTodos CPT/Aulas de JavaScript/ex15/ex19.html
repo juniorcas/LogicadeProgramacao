@@ -20,46 +20,50 @@
     body {
       font-family: monospace;
       background: black;
-      color: yellow;
+      color: rgba(255, 255, 0, 0.897);
     }
 
    .background {
      background: url(citynight.jpg) no-repeat;
      background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
      height: 100vh;
      display: flex;
    } 
 
    .text, .box {
-     margin-top: 35vh;
+     margin-top: 85vh;
      flex: 0.8;
    }
 
    .text {
-     margin-left: 10%;
-     font-weight: 300px;
+     margin-left: 5%;
+     font-weight: 250px;
    }
 
    .box {
-     margin-left: 25%;
+     margin-left: 90%;
    }
 
-   .text h1 {
-     font-size: 70px;
-     color: yellow;
-     font-weight: 500;
+   .text h2 {
+     font-size: 30px;
+     color: rgba(255, 255, 0, 0.897);
+     font-weight: 700;
+     margin-left: 10%;
    }
 
    .text p {
      font-size: 20px;
-     color: yellow;
+     color: rgba(255, 255, 0, 0.897);
      font-weight: 300;
+     margin-left: 10%;
    }
 
-   .text p a {
-     color: yellow;
-     font-weight: 700;
-   }
+   /*.text p h3 {
+     color: rgba(255, 255, 0, 0.897);
+     font-weight: 500;
+   }*/
 
    .form {
      background: transparent;
@@ -71,28 +75,28 @@
    }
 
    input {
-     margin: 20px 0;
-     padding: 10px;
+     margin: 25px 0;
+     padding: 12px;
      background: transparent;
      border: none;
      outline: none;
-     color: yellow;
+     color: rgba(255, 255, 0, 0.897);
      font-family: monospace;
    }
 
-   .username, .password {
-     border-bottom: 1px solid yellow;
+   .usuario, .senha {
+     border-bottom: 1px solid rgba(255, 255, 0, 0.897);
    }
 
    .button {
      background: transparent;
-     border: 1px solid yellow;
-     color: yellow;
+     border: 1px solid rgba(255, 255, 0, 0.897);
+     color: rgba(255, 255, 0, 0.897);
      font-size: 18px;
    }
 
    .button:hover {
-     background: #fff;
+     background: rgba(255, 255, 0, 0.897);
      color: black;
    }
   </style>
@@ -107,8 +111,8 @@
 
       <div class="text">
 
-        <h1>Login</h1>
-        <p>No Account ? <a href="ex17.html">Sign up</a></p>
+        <h2>"Regra número 1: Nunca perca dinheiro.</h2>
+        <p>Regra núemro 2: Nunca se esqueça da regra número 1".</p>
 
       </div>
 
@@ -116,8 +120,8 @@
 
         <form class="form">
 
-          <input type="text" class="username" placeholder="Username" required>
-          <input type="password" class="password" placeholder="Password" required>
+          <input type="text" class="usuario" placeholder="Usuário" required>
+          <input type="password" class="senha" placeholder="Senha" required>
           <input type="submit" class="button" value="Login">
 
         </form>
