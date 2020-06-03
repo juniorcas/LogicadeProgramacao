@@ -29,6 +29,32 @@
 
     <script>
 
+        function cadastroCliente(event) {
+            event.preventDefault();
+
+            // obtem os dados de formulario do cliente
+            var dadosDoCliente = new FormData(formDeCadastro);
+
+            var nome = dadosDeContato.get("nome");
+            var email = dadosDeContato.get("email");
+            var telefone = dadosDeContato.get("telefone");
+            var mensagem = dadosDeContato.get("mensagem");
+
+            if (!nome || !email || !mensagem) {
+                alert("Por favor, preencha o Nome Completo, Email e Mensagem para se cadastrar conosco!");
+                return false;
+            }
+
+            // prepara mensagem de sucesso
+            alert("Olá " + nome + ", seu cadastro foi realizado com sucesso!");
+            return false;
+
+        }
+
+        var formDeCadastro = document.querySelector("form");
+        formDeCadastro.addEventListener("submit", cadastroCliente);
+        
+
     </script>
     
 </body>
