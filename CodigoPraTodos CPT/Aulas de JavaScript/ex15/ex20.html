@@ -82,7 +82,11 @@ textarea {
             var email = formuser.email.value;
             var senha = formuser.senha.value;
 
-            
+            if (nome == "") {
+                aleret("Preencha o campo nome!");
+                formuser.nome.focus();
+                return false;
+            }
 
         }
 
