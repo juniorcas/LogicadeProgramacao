@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 
@@ -21,41 +21,12 @@
 
         <input type="text" name="nome" placeholder="Nome Completo*">
         <input type="text" name="email" placeholder="E-mail*">
+        <input type="password" class="senha" placeholder="Senha*" required>
         <input type="text" name="telefone" placeholder="Telefone celular*">
         <textarea name="mensagem" placeholder="Escreva aqui sobre seu Perfil de Investimento*"></textarea>
         <input type="button" value="CADASTRAR" id="botao">
 
     </form>
-
-    <script>
-
-        function cadastroCliente(event) {
-            event.preventDefault();
-
-            // obtem os dados de formulario do cliente
-            var dadosDoCliente = new FormData(formDeCadastro);
-
-            var nome = dadosDeContato.get("nome");
-            var email = dadosDeContato.get("email");
-            var telefone = dadosDeContato.get("telefone");
-            var mensagem = dadosDeContato.get("mensagem");
-
-            if (!nome || !email || !mensagem) {
-                alert("Por favor, preencha o Nome Completo, Email e Mensagem para se cadastrar conosco!");
-                return false;
-            }
-
-            // prepara mensagem de sucesso
-            alert("Olá " + nome + ", seu cadastro foi realizado com sucesso!");
-            return false;
-
-        }
-
-        var formDeCadastro = document.querySelector("form");
-        formDeCadastro.addEventListener("submit", cadastroCliente);
-        
-
-    </script>
     
 </body>
 
