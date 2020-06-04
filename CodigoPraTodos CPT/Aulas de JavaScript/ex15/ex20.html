@@ -76,6 +76,15 @@ textarea {
 
     <script>
 
+        function validar() {
+
+            var nome = formuser.nome.value;
+            var email = formuser.email.value;
+            var senha = formuser.senha.value;
+
+            
+
+        }
 
     </script>
 
@@ -89,7 +98,7 @@ textarea {
 
         <input type="text" name="nome" placeholder="Nome Completo*">
         <input type="text" name="email" placeholder="E-mail*">
-        <input type="password" class="senha" placeholder="Senha*">
+        <input type="password" name="senha" placeholder="Senha*">
         <input type="number" name="telefone" placeholder="Telefone celular*">
         <textarea name="mensagem" placeholder="Escreva aqui sobre seu Perfil de Investimento*"></textarea>
         <input type="submit" onclick="return validar()" id="botao">
