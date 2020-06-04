@@ -66,6 +66,7 @@ textarea {
     cursor: pointer;
 }
 
+
 @media (max-width: 480px) {
     form {
         width: 100%;
@@ -74,40 +75,51 @@ textarea {
 
     </style>
 
-    <script>
-
-        function validar() {
-
-            var nome = formuser.nome.value;
-            var email = formuser.email.value;
-            var senha = formuser.senha.value;
-
-            if (nome == "") {
-                aleret("Preencha o campo nome!");
-                formuser.nome.focus();
-                return false;
-            }
-
-        }
-
-    </script>
-
 </head>
 
 <body>
     
-    <form name="formuser" action="enviar.php" method="POST">
+    <form id="cadastro">
 
         <h2>Crie sua conta para ter acesso ao nosso conteúdo</h2>
 
         <input type="text" name="nome" placeholder="Nome Completo*">
         <input type="text" name="email" placeholder="E-mail*">
         <input type="password" name="senha" placeholder="Senha*">
-        <input type="number" name="telefone" placeholder="Telefone celular*">
+        <input type="text" name="telefone" placeholder="Telefone*">
         <textarea name="mensagem" placeholder="Escreva aqui sobre seu Perfil de Investimento*"></textarea>
         <input type="submit" onclick="return validar()" id="botao">
+        
 
     </form>
+
+    <script>
+
+        function cadastrarCliente(event){
+
+            event.preventDefault();
+
+            var dadosCliente = new FormData(formDeCadastro);
+
+            var nome = dadosCliente.get("nome");
+            var email = dadosCliente.get("email");
+            var senha = dadosCliente.get("senha");
+            var telefone = dadosCliente.get("telefone");
+            var mensagem = dadosCliente.get("mensagem");
+
+        
+        if (!nome || !email || !mensagem) {
+                alert("Por favor, preencha todos os campos corretamente para finalizar seu cadastro conosco!");
+                return false;
+            }
+
+        }
+
+        var formDeCadastro = document.querySelector("form");
+        formDeCadastro.addEventListener("submit", cadastrarCliente);
+
+
+    </script>
     
 </body>
 
