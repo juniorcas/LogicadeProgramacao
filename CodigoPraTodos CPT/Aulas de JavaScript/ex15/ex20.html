@@ -126,6 +126,14 @@ textarea {
         
         //var cadastrar = localStorage.getItem("cliente");
 
+        if(typeof(Storage)!="undefined"){
+            if(localStorage.visitas){
+                localStorage.visitas = Number(localStorage.visitas) + 1;
+            } else {
+                localStorage.visitas = 1;
+            }
+        }
+
 
     </script>
     
