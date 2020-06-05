@@ -118,10 +118,10 @@
 
       <div class="form">
 
-        <form class="form">
+        <form class="form" onsubmit="return validar()">
 
-          <input type="text" class="email" placeholder="Email" required>
-          <input type="password" class="senha" placeholder="Senha" required>
+          <input type="text" class="email" placeholder="Email">
+          <input type="password" class="senha" placeholder="Senha">
           <input type="submit" class="button" value="Login">
 
         </form>
@@ -131,6 +131,18 @@
     </div>
 
   </main>
+
+  <script>
+
+    function validar() {
+
+      if(document.form.email.senha.value == "") {
+        alert("Preencha seu email e senha")
+        return false;
+      }
+    }
+
+  </script>
   
 </body>
 
