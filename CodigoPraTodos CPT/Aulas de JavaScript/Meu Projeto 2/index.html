@@ -35,6 +35,10 @@
             text-decoration: none;
         }
 
+        .hide {
+            display: none;
+        }
+
     </style>
 
 </head>
@@ -52,6 +56,18 @@
     <button class="fat">Ver Ideias</button>
 
     <p id="footer"><a href="https://www.instagram.com/">A vida é uma festa!</a> 🎂 Celebre todos os dias. 🍰</p>
+
+    <script>
+        
+        document
+        .querySelector("button.fat")
+        .addEventListener("click", function(){
+            document
+                .querySelector("#footer")
+                .classList
+                .toggle("hide")
+        })
+    </script>
 
     
 </body>
