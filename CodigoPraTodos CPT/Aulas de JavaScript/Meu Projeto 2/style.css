@@ -149,11 +149,27 @@ footer a {
     margin: 16px 0px;
 }
 
-form input {
+form input, form textarea {
     width: 100%;
     padding: 12px;
     border-radius: 6px;
     border: 1px solid rgba(141, 25, 52, 0.5);
+    outline: none;
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+form button {
+    background: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+
 }
 
 
