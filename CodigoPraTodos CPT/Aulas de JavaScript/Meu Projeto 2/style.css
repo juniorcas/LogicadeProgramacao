@@ -117,6 +117,45 @@ footer a {
     margin: 16px 0px;
 }
 
+/* Modal */
+
+#modal {
+    background: #ff5E84;
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#modal .content {
+    margin-top: 128px;
+    color: white;
+}
+
+#modal .content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.input-wrapper {
+    margin: 16px 0px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.5);
+}
+
 
 
 
