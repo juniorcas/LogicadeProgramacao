@@ -169,7 +169,13 @@ form button {
     width: 150px;
     height: 40px;
     border-radius: 6px;
+    cursor: pointer;
+}
 
+form button:hover {
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
 }
 
 
