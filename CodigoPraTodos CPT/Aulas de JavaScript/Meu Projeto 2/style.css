@@ -3,6 +3,11 @@ body {
     color: black;
     margin: 0px;
     font-family: 'Bree Serif', serif;
+    margin: 0px;
+}
+
+body.hideScroll {
+    overflow: hidden;
 }
 
 a {
@@ -119,10 +124,12 @@ footer a {
     background: #ff5E84;
     position: absolute;
     top: 0px;
-    width: 100vw;
-    height: 100vh;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
     display: flex;
     justify-content: center;
+    transition: 400ms;
 }
 
 #modal .content {
@@ -260,7 +267,6 @@ form button:hover {
 
 section#title {
     text-align: center;
-    margin: 64px 0px;
 }
 
 section#title p {
@@ -281,6 +287,10 @@ section#ideas {
 
 section#ideas .idea {
     margin: 0px;
+}
+
+section#title, section#ideas, footer {
+    margin-top: 64px;
 }
 
 
