@@ -3,7 +3,7 @@ body {
     color: black;
     margin: 0px;
     font-family: 'Bree Serif', serif;
- }
+}
 
 a {
     color: #ff5E84;
@@ -26,16 +26,16 @@ p, .description {
      max-width: 980px;
      margin: 40px auto;
      display: flex;
- }
+}
 
  #itnro {
      width: 300px;
      margin-right: 20px;
- }
+}
 
  main {
      margin: 32px 0px;
- }
+}
 
 #buttons {
     display: flex;
